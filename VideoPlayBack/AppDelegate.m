@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "SelMainViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -17,6 +17,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+    
+    SelMainViewController *mainVC = [[SelMainViewController alloc]init];
+    UINavigationController *mainNav = [[UINavigationController alloc]initWithRootViewController:mainVC];
+    self.window.rootViewController = mainNav;
+    
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

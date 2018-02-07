@@ -8,13 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		3EFE7548202AD5DC00B780B1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EFE7547202AD5DC00B780B1 /* AppDelegate.m */; };
-		3EFE754B202AD5DC00B780B1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EFE754A202AD5DC00B780B1 /* ViewController.m */; };
-		3EFE754E202AD5DC00B780B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EFE754C202AD5DC00B780B1 /* Main.storyboard */; };
-		3EFE7550202AD5DC00B780B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EFE754F202AD5DC00B780B1 /* Assets.xcassets */; };
-		3EFE7553202AD5DC00B780B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EFE7551202AD5DC00B780B1 /* LaunchScreen.storyboard */; };
 		3EFE7556202AD5DC00B780B1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EFE7555202AD5DC00B780B1 /* main.m */; };
 		3EFE7560202AD5DC00B780B1 /* VideoPlayBackTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EFE755F202AD5DC00B780B1 /* VideoPlayBackTests.m */; };
 		3EFE756B202AD5DC00B780B1 /* VideoPlayBackUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EFE756A202AD5DC00B780B1 /* VideoPlayBackUITests.m */; };
+		3EFE7584202AD84700B780B1 /* SelPlayerConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EFE757B202AD84700B780B1 /* SelPlayerConfiguration.m */; };
+		3EFE7585202AD84700B780B1 /* UIViewController+PlayerRotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EFE757D202AD84700B780B1 /* UIViewController+PlayerRotation.m */; };
+		3EFE7586202AD84700B780B1 /* SelPlaybackControls.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EFE757F202AD84700B780B1 /* SelPlaybackControls.m */; };
+		3EFE7587202AD84700B780B1 /* SelVideoPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EFE7581202AD84700B780B1 /* SelVideoPlayer.m */; };
+		3EFE7588202AD84700B780B1 /* SelVideoSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EFE7583202AD84700B780B1 /* SelVideoSlider.m */; };
+		3EFE758D202AD87000B780B1 /* SelMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EFE7589202AD86F00B780B1 /* SelMainViewController.m */; };
+		3EFE758E202AD87000B780B1 /* SelVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EFE758C202AD87000B780B1 /* SelVideoViewController.m */; };
+		3EFE7590202AD8FB00B780B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EFE758F202AD8FB00B780B1 /* Assets.xcassets */; };
+		EBE775DAC34B2DF71E780ED7 /* libPods-VideoPlayBack.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A12F2DC433C60702E9504E4B /* libPods-VideoPlayBack.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,11 +43,6 @@
 		3EFE7543202AD5DC00B780B1 /* VideoPlayBack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoPlayBack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EFE7546202AD5DC00B780B1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3EFE7547202AD5DC00B780B1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		3EFE7549202AD5DC00B780B1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		3EFE754A202AD5DC00B780B1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		3EFE754D202AD5DC00B780B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3EFE754F202AD5DC00B780B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3EFE7552202AD5DC00B780B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3EFE7554202AD5DC00B780B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3EFE7555202AD5DC00B780B1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3EFE755B202AD5DC00B780B1 /* VideoPlayBackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VideoPlayBackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +51,24 @@
 		3EFE7566202AD5DC00B780B1 /* VideoPlayBackUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VideoPlayBackUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EFE756A202AD5DC00B780B1 /* VideoPlayBackUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoPlayBackUITests.m; sourceTree = "<group>"; };
 		3EFE756C202AD5DC00B780B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3EFE757A202AD84700B780B1 /* SelPlayerConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelPlayerConfiguration.h; sourceTree = "<group>"; };
+		3EFE757B202AD84700B780B1 /* SelPlayerConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelPlayerConfiguration.m; sourceTree = "<group>"; };
+		3EFE757C202AD84700B780B1 /* UIViewController+PlayerRotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+PlayerRotation.h"; sourceTree = "<group>"; };
+		3EFE757D202AD84700B780B1 /* UIViewController+PlayerRotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+PlayerRotation.m"; sourceTree = "<group>"; };
+		3EFE757E202AD84700B780B1 /* SelPlaybackControls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelPlaybackControls.h; sourceTree = "<group>"; };
+		3EFE757F202AD84700B780B1 /* SelPlaybackControls.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelPlaybackControls.m; sourceTree = "<group>"; };
+		3EFE7580202AD84700B780B1 /* SelVideoPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelVideoPlayer.h; sourceTree = "<group>"; };
+		3EFE7581202AD84700B780B1 /* SelVideoPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelVideoPlayer.m; sourceTree = "<group>"; };
+		3EFE7582202AD84700B780B1 /* SelVideoSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelVideoSlider.h; sourceTree = "<group>"; };
+		3EFE7583202AD84700B780B1 /* SelVideoSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelVideoSlider.m; sourceTree = "<group>"; };
+		3EFE7589202AD86F00B780B1 /* SelMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelMainViewController.m; sourceTree = "<group>"; };
+		3EFE758A202AD86F00B780B1 /* SelMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelMainViewController.h; sourceTree = "<group>"; };
+		3EFE758B202AD87000B780B1 /* SelVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelVideoViewController.h; sourceTree = "<group>"; };
+		3EFE758C202AD87000B780B1 /* SelVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelVideoViewController.m; sourceTree = "<group>"; };
+		3EFE758F202AD8FB00B780B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		95DC8AD59CA21375E128A85E /* Pods-VideoPlayBack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoPlayBack.release.xcconfig"; path = "Pods/Target Support Files/Pods-VideoPlayBack/Pods-VideoPlayBack.release.xcconfig"; sourceTree = "<group>"; };
+		A12F2DC433C60702E9504E4B /* libPods-VideoPlayBack.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VideoPlayBack.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5E6E3E5E2D79BE08A89B60A /* Pods-VideoPlayBack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoPlayBack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VideoPlayBack/Pods-VideoPlayBack.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBE775DAC34B2DF71E780ED7 /* libPods-VideoPlayBack.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +97,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		287192831D12ABE744477E47 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D5E6E3E5E2D79BE08A89B60A /* Pods-VideoPlayBack.debug.xcconfig */,
+				95DC8AD59CA21375E128A85E /* Pods-VideoPlayBack.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		3EFE753A202AD5DC00B780B1 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +113,8 @@
 				3EFE755E202AD5DC00B780B1 /* VideoPlayBackTests */,
 				3EFE7569202AD5DC00B780B1 /* VideoPlayBackUITests */,
 				3EFE7544202AD5DC00B780B1 /* Products */,
+				287192831D12ABE744477E47 /* Pods */,
+				67CAAC21BB318457ECDBA964 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,13 +131,14 @@
 		3EFE7545202AD5DC00B780B1 /* VideoPlayBack */ = {
 			isa = PBXGroup;
 			children = (
+				3EFE7578202AD84700B780B1 /* VideoPlayer */,
 				3EFE7546202AD5DC00B780B1 /* AppDelegate.h */,
 				3EFE7547202AD5DC00B780B1 /* AppDelegate.m */,
-				3EFE7549202AD5DC00B780B1 /* ViewController.h */,
-				3EFE754A202AD5DC00B780B1 /* ViewController.m */,
-				3EFE754C202AD5DC00B780B1 /* Main.storyboard */,
-				3EFE754F202AD5DC00B780B1 /* Assets.xcassets */,
-				3EFE7551202AD5DC00B780B1 /* LaunchScreen.storyboard */,
+				3EFE758A202AD86F00B780B1 /* SelMainViewController.h */,
+				3EFE7589202AD86F00B780B1 /* SelMainViewController.m */,
+				3EFE758B202AD87000B780B1 /* SelVideoViewController.h */,
+				3EFE758C202AD87000B780B1 /* SelVideoViewController.m */,
+				3EFE758F202AD8FB00B780B1 /* Assets.xcassets */,
 				3EFE7554202AD5DC00B780B1 /* Info.plist */,
 				3EFE7555202AD5DC00B780B1 /* main.m */,
 			);
@@ -132,6 +163,39 @@
 			path = VideoPlayBackUITests;
 			sourceTree = "<group>";
 		};
+		3EFE7578202AD84700B780B1 /* VideoPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				3EFE7579202AD84700B780B1 /* Configs */,
+				3EFE757E202AD84700B780B1 /* SelPlaybackControls.h */,
+				3EFE757F202AD84700B780B1 /* SelPlaybackControls.m */,
+				3EFE7580202AD84700B780B1 /* SelVideoPlayer.h */,
+				3EFE7581202AD84700B780B1 /* SelVideoPlayer.m */,
+				3EFE7582202AD84700B780B1 /* SelVideoSlider.h */,
+				3EFE7583202AD84700B780B1 /* SelVideoSlider.m */,
+			);
+			path = VideoPlayer;
+			sourceTree = "<group>";
+		};
+		3EFE7579202AD84700B780B1 /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				3EFE757A202AD84700B780B1 /* SelPlayerConfiguration.h */,
+				3EFE757B202AD84700B780B1 /* SelPlayerConfiguration.m */,
+				3EFE757C202AD84700B780B1 /* UIViewController+PlayerRotation.h */,
+				3EFE757D202AD84700B780B1 /* UIViewController+PlayerRotation.m */,
+			);
+			path = Configs;
+			sourceTree = "<group>";
+		};
+		67CAAC21BB318457ECDBA964 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A12F2DC433C60702E9504E4B /* libPods-VideoPlayBack.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +203,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3EFE756F202AD5DC00B780B1 /* Build configuration list for PBXNativeTarget "VideoPlayBack" */;
 			buildPhases = (
+				2E5E29EE1E166CF234659942 /* [CP] Check Pods Manifest.lock */,
 				3EFE753F202AD5DC00B780B1 /* Sources */,
 				3EFE7540202AD5DC00B780B1 /* Frameworks */,
 				3EFE7541202AD5DC00B780B1 /* Resources */,
+				9D74F2F3B5D02ABAF434AB9D /* [CP] Embed Pods Frameworks */,
+				4ACB1E9011DDCF7F2DC42441 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -238,9 +305,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3EFE7553202AD5DC00B780B1 /* LaunchScreen.storyboard in Resources */,
-				3EFE7550202AD5DC00B780B1 /* Assets.xcassets in Resources */,
-				3EFE754E202AD5DC00B780B1 /* Main.storyboard in Resources */,
+				3EFE7590202AD8FB00B780B1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,14 +325,71 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2E5E29EE1E166CF234659942 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VideoPlayBack-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4ACB1E9011DDCF7F2DC42441 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VideoPlayBack/Pods-VideoPlayBack-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D74F2F3B5D02ABAF434AB9D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VideoPlayBack/Pods-VideoPlayBack-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3EFE753F202AD5DC00B780B1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3EFE754B202AD5DC00B780B1 /* ViewController.m in Sources */,
 				3EFE7556202AD5DC00B780B1 /* main.m in Sources */,
+				3EFE7586202AD84700B780B1 /* SelPlaybackControls.m in Sources */,
+				3EFE758D202AD87000B780B1 /* SelMainViewController.m in Sources */,
+				3EFE7584202AD84700B780B1 /* SelPlayerConfiguration.m in Sources */,
 				3EFE7548202AD5DC00B780B1 /* AppDelegate.m in Sources */,
+				3EFE7585202AD84700B780B1 /* UIViewController+PlayerRotation.m in Sources */,
+				3EFE7588202AD84700B780B1 /* SelVideoSlider.m in Sources */,
+				3EFE758E202AD87000B780B1 /* SelVideoViewController.m in Sources */,
+				3EFE7587202AD84700B780B1 /* SelVideoPlayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,25 +423,6 @@
 			targetProxy = 3EFE7567202AD5DC00B780B1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		3EFE754C202AD5DC00B780B1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3EFE754D202AD5DC00B780B1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		3EFE7551202AD5DC00B780B1 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3EFE7552202AD5DC00B780B1 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		3EFE756D202AD5DC00B780B1 /* Debug */ = {
@@ -428,9 +531,11 @@
 		};
 		3EFE7570202AD5DC00B780B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5E6E3E5E2D79BE08A89B60A /* Pods-VideoPlayBack.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 32MQWCT2QN;
 				INFOPLIST_FILE = VideoPlayBack/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = caojicom.com.VideoPlayBack;
@@ -441,9 +546,11 @@
 		};
 		3EFE7571202AD5DC00B780B1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95DC8AD59CA21375E128A85E /* Pods-VideoPlayBack.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 32MQWCT2QN;
 				INFOPLIST_FILE = VideoPlayBack/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = caojicom.com.VideoPlayBack;
